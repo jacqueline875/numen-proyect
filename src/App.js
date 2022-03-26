@@ -1,9 +1,14 @@
 import React from "react";
+import NavBar from "./components/NavBar";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl semibold">Titulo Principal</h1>
+      <NavBar/>
+      <Cards/>
+      <Footer/>
     </div>
   );
 };
