@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 //mi primer comentario
+//mi segundo comenterio
 const App = () => {
   return (
     <div>
