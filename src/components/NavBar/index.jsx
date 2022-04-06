@@ -1,8 +1,8 @@
 import React from 'react'
 
-const NavBar = () => {
+const NavBar = () => {  
   return (
-    <div className="bg-green-500 py-8">NavBar</div>
+    <div className="bg-bubble-gum py-8">NavBar</div>  
   )
 }
 
