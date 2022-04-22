@@ -2,7 +2,7 @@ import React from 'react'
 
 const BannerPrincipal = () => {
   return (
-    <div className="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill bg-[url('https://mc.net.co/wp-content/uploads/2020/12/xcomputo-tecnologia-panorama.jpg.pagespeed.ic.YJVB-FRLUJ.webp')]" >
+    <div className="bg-cover bg-center h-auto text-white py-64 px-10 object-fill bg-[url('https://mc.net.co/wp-content/uploads/2020/12/xcomputo-tecnologia-panorama.jpg.pagespeed.ic.YJVB-FRLUJ.webp')]" >
         
        <div className='md:w-1/2'>
         <p className='font-bold text-sm uppercase'>Ssdfdsfsdfdsf</p>
