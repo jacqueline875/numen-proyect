@@ -5,7 +5,7 @@ const Redes = () => {
     <div className="flex flex-wrap text-center justify-center text-white">
       <div className="container pt-9">
         <div className="flex justify-center mb-9">
-          <a href="#!" className="mr-9 text-gray-800">
+          <a href="#!" className="mr-9 text-purple">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -22,7 +22,7 @@ const Redes = () => {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800">
+          <a href="#!" className="mr-9 text-purple">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -39,7 +39,7 @@ const Redes = () => {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800">
+          <a href="#!" className="mr-9 text-purple">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -56,7 +56,7 @@ const Redes = () => {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800">
+          <a href="#!" className="mr-9 text-purple">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -73,7 +73,7 @@ const Redes = () => {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800">
+          <a href="#!" className="mr-9 text-purple">
             <svg
               aria-hidden="true"
               focusable="false"

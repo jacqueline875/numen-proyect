@@ -20,7 +20,7 @@ const Cards = ({ list }) => {
         // </div>
         <div className='flex flex-row flex-wrap items-center justify-center'>
             {list.map((card, index) => (
-                <div className='m-6 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-300 rounded-lg shadow-lg'>
+                <div className='m-6 overflow-hidden bg-gradient-to-br from-purple to-bermuda rounded-lg shadow-lg'>
                     <div className='pt-10 px-10 flex flex-column items-center justify-center' key={index}>
                         <img className='w-40 h-48 object-contain' src={card.imageUrl} alt={card.imageUrl} />
                     </div>
@@ -30,7 +30,7 @@ const Cards = ({ list }) => {
                             <span className='block font-semibold text-xl'>{card.description}</span>
                             <span className='block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none items-center'>{card.price}</span>
                         </div>
-                        <button className='mt-8 w-48 hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>
+                        <button className='mt-8 w-48 hover:bg-purple text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple hover:border-transparent rounded'>
                             Add
                         </button>
                     </div>
