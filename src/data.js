@@ -33,6 +33,13 @@ export const cardsList = [
         "category": "dfghfdgf",
         "description": "dhfgfd",
         "price": "$500"
-    }  
+    },
+    {
+        "id": "6",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Crux-1.png?v=1636045676",
+        "category": "dfghfdgf",
+        "description": "dhfgfd",
+        "price": "$500"
+    }
    
 ]
