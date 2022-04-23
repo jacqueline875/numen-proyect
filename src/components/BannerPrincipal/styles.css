@@ -1,0 +1,7 @@
+.carousel .carousel-slider {
+    height: 200px !important;
+    background:red !important;
+}
+.carousel-root {
+    border: 10px solid chartreuse;
+}
