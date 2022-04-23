@@ -1,15 +1,14 @@
 import React from "react";
-import ItemsContainer from "./ItemsContainer";
+import ItemsContainer from "./itemsContainers";
 import SocialIcons from "./SocialIcons";
 import { Icons } from "./Menus";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="text-white bg-gray-900">
       <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
         <h1
-          className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
-        md:w-2/5"
+          className="mb-6 text-3xl font-semibold lg:text-4xl md:mb-0 lg:leading-normal md:w-2/5"
         >
           <span className="text-teal-400">Free</span> until you're ready to
           launch
@@ -31,8 +30,7 @@ const Footer = () => {
       </div>
       <ItemsContainer />
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-      text-center pt-2 text-gray-400 text-sm pb-8"
+        className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-2 lg:grid-cols-3"
       >
         <span>© 2022 Appy. All rights reserved.</span>
         <span>Terms · Privacy Policy</span>
