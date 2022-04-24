@@ -8,17 +8,21 @@ import Carousel from "./components/Carousel";
 import Banner from "./components/Banner";
 import BannerPrincipal from "./components/BannerPrincipal";
 import { cardsList } from "./data"; 
-import Swal from 'sweetalert2'
+
 
 const App = () => {
   return (
-    <div>
+    // <div className="bg-gradient-to-br from-indigo-300 to-indigo-500">
+    <div className="bg-purple">
       <NavBar/>
       <Carrito/> 
-      <BannerPrincipal/>       
+      <BannerPrincipal/> 
+      <p className="text-center mt-10 text-3xl font-bold text-silver">Productos </p>      
       <Cards list={cardsList}/> 
+      <p className="text-center mt-10 text-3xl font-bold text-silver">Ultimas Ofertas </p>  
       <Banner/>      
       <Carousel/> 
+      <p className="text-center mt-10 text-3xl font-bold text-silver">Seguinos en </p> 
       <Redes/>        
       <Footer/> 
     </div>
