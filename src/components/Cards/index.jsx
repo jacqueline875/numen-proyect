@@ -1,24 +1,21 @@
 // Shift+ALT+F ordenar codigo
 import React from 'react'
-// Swal.fire({
-//     position: 'top-end',
-//     icon: 'success',
-//     title: 'Your work has been saved',
-//     showConfirmButton: false,
-//     timer: 1500
-//   })
+import Swal from 'sweetalert2'
+
 
 const Cards = ({ list }) => {
+    const handleModal = () => {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Se agrego al carrito correctamente',
+            showConfirmButton: false,
+            timer: 1500     
+        })
+    }
     return (
-        // <div className="flex flex-row flex-wrap justify-center" >
-        //   {list.map((card, index) => (
-        //     <div className='flex flex-col items-center justify-center bg-midnight text-white w-28 h-36 m-2 rounded-lg' key={index}>
-        //       <img src={card.imageUrl} alt={card.imageUrl} className="w-16 h-16 object-contain" />
-        //       <p className='capitalize'>{card.id}</p>
-        //     </div>
-        //   ))}
-        // </div>
-        <div className='flex flex-row flex-wrap items-center justify-center'>
+
+        <div className='flex flex-row flex-wrap items-center justify-center'>            
             {list.map((card, index) => (
                 <div className='mt-12 m-2 overflow-hidden bg-gradient-to-br from-purple to-bermuda rounded-lg shadow-lg'>
                     <div className='pt-10 px-10 flex flex-column items-center justify-center' key={index}>
@@ -28,15 +25,15 @@ const Cards = ({ list }) => {
                         <span className='block opacity-75 -mb-1'>{card.category}</span>
                         <div className='flex justify-between'>
                             <span className='block font-semibold text-xl'>{card.description}</span>
-                            <span className='block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none items-center'>{card.price}</span>
+                            <span className='block bg-white rounded-full text-purple text-xs font-bold px-4 py-2 leading-none items-center'>{card.price}</span>
                         </div>
-                        <button className='mt-8 w-48 hover:bg-purple text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple hover:border-transparent rounded'>
+                        <button onClick={()=>handleModal()} className='mt-8 w-48 hover:bg-purple text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple hover:border-transparent rounded'>
                             Add
                         </button>
                     </div>
                 </div>
             ))}
-        </div>
+        </div>       
     )
 }
 
