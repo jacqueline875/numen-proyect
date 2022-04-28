@@ -17,17 +17,17 @@ const Cards = ({ list }) => {
 
         <div className='flex flex-row flex-wrap items-center justify-center'>            
             {list.map((card, index) => (
-                <div className='mt-12 m-2 overflow-hidden bg-gradient-to-br from-purple to-bermuda rounded-lg shadow-lg'>
+                <div className='mt-12 m-2 overflow-hidden bg-gradient-to-br from-purple to-black rounded-lg shadow-lg'>
                     <div className='pt-10 px-10 flex flex-column items-center justify-center' key={index}>
                         <img className='w-40 h-48 object-contain' src={card.imageUrl} alt={card.imageUrl} />
                     </div>
-                    <div className='text-black px-6 pb-6 mt-6'>
+                    <div className='text-white px-6 pb-6 mt-6'>
                         <span className='block opacity-75 -mb-1'>{card.category}</span>
                         <div className='flex justify-between'>
                             <span className='block font-semibold text-xl'>{card.description}</span>
                             <span className='block bg-white rounded-full text-purple text-xs font-bold px-4 py-2 leading-none items-center'>{card.price}</span>
                         </div>
-                        <button onClick={()=>handleModal()} className='mt-8 w-48 hover:bg-purple text-gray-700 font-semibold hover:text-white py-2 px-4 border border-purple hover:border-transparent rounded'>
+                        <button onClick={()=>handleModal()} className='mt-8 w-48 hover:bg-purple text-white-700 font-semibold hover:text-white py-2 px-4 border border-purple hover:border-transparent rounded'>
                             Add
                         </button>
                     </div>
