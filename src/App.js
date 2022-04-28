@@ -13,7 +13,7 @@ import { cardsList } from "./data";
 const App = () => {
   return (
     // <div className="bg-gradient-to-br from-indigo-300 to-indigo-500">
-    <div className="bg-purple">
+    <div className="bg-black">
       <NavBar/>
       <Carrito/> 
       <BannerPrincipal/> 
