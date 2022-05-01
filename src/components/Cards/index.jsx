@@ -17,7 +17,7 @@ const Cards = ({ list }) => {
 
         <div className='flex flex-row flex-wrap items-center justify-center'>            
             {list.map((card, index) => (
-                <div className='mt-12 m-2 overflow-hidden bg-gradient-to-br from-purple to-black rounded-lg shadow-lg'>
+                <div className='mt-12 m-2 overflow-hidden bg-gradient-to-br from-purple to-gray-900 rounded-lg shadow-lg'>
                     <div className='pt-10 px-10 flex flex-column items-center justify-center' key={index}>
                         <img className='w-40 h-48 object-contain' src={card.imageUrl} alt={card.imageUrl} />
                     </div>
