@@ -5,7 +5,7 @@ import { Icons } from "./Menus";
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-gradient-to-l from-purple to-black">
+    <footer className="text-white bg-gradient-to-l from-purple to-gray-900">
       <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
         <h1
           className="mb-6 text-3xl font-semibold lg:text-4xl md:mb-0 lg:leading-normal md:w-2/5"
