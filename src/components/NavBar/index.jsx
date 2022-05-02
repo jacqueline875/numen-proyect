@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { countCartItems } = props;
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex bg-gradient-to-l from-purple to-gray-900 text-white px-8 items-center justify-between border-b border-gray-400 py-8">
+    <div className="flex bg-gradient-to-l from-purple to-gray-900 text-white px-10 items-center justify-between border-b border-gray-400 py-8">
       <a href="/">
         <img src="" alt="logo" />
       </a>
@@ -40,47 +41,59 @@ export default function NavBar() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px] ">
               <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs ' >Cdfgdfg</a>
               </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+              <li>
+                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs '>
+                  Cart {' '}
+                  {countCartItems ? (
+                    <button className="bg-red-500 rounded py-1 px-2"> {countCartItems} </button>
+                  ) : ('')
+                  }
+                </a>
               </li>
-            
+
             </ul>
           </div>
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+            <a href='#' className='py-8 px-6 text-white font-bold  text-xs'  >Cdfgdfg</a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+            <a href='#' className='py-8 px-6 text-white font-bold  text-xs  '>Cdfgdfg</a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+            <a href='#' className='py-8 px-6 text-white font-bold  text-xs  '>Cdfgdfg</a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+            <a href='#' className='py-8 px-6 text-white font-bold  text-xs  '>Cdfgdfg</a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
+            <a href='#' className='py-8 px-6 text-white font-bold  text-xs '>Cdfgdfg</a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  hover:bg-gray-200 hover:text-gray-800'>Cdfgdfg</a>
-          </li>         
+            <a href='#' className='py-8 px-6 text-white font-bold  text-xs '>
+              Carrito {''}
+              {countCartItems ? (
+                <button className="bg-red-500 rounded py-1 px-2"> {countCartItems} </button>
+              ) : ('')
+              }
+            </a>
+          </li>
         </ul>
       </nav>
       <style>{`
