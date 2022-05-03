@@ -1,9 +1,10 @@
 
 
 import { useState } from "react";
+import Carrito from "../Carrito";
 
 export default function NavBar(props) {
-  const { countCartItems } = props;
+  const { cartItems, onAdd, onRemove } = props;
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div className="flex bg-gradient-to-l from-purple to-gray-900 text-white px-10 items-center justify-between border-b border-gray-400 py-8">
@@ -58,8 +59,8 @@ export default function NavBar(props) {
               <li>
                 <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs '>
                   Cart {' '}
-                  {countCartItems ? (
-                    <button className="bg-red-500 rounded py-1 px-2"> {countCartItems} </button>
+                  {cartItems.length ? (
+                    <button className="bg-red-500 rounded py-1 px-2"> {cartItems.length} </button>
                   ) : ('')
                   }
                 </a>
@@ -88,8 +89,8 @@ export default function NavBar(props) {
           <li>
             <a href='#' className='py-8 px-6 text-white font-bold  text-xs '>
               Carrito {''}
-              {countCartItems ? (
-                <button className="bg-red-500 rounded py-1 px-2"> {countCartItems} </button>
+              {cartItems.length ? (               
+                <Carrito onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/> 
               ) : ('')
               }
             </a>

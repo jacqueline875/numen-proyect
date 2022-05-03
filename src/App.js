@@ -30,10 +30,9 @@ const App = () => {
       setCartItems(cartItems.map(x=>x.id === product.id ? {...exist, qty:exist.qty - 1} : x ));
     }
   }
-  return (
-   
+  return (   
     <div className="bg-gray-900">
-      <NavBar countCartItems={cartItems.length}/>     
+      <NavBar  onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>        
       <BannerPrincipal/> 
       <p className="text-center mt-10 text-3xl font-bold text-silver">Productos </p>      
       <Cards onAdd={onAdd} products={products}/> 
