@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import Carrito from "../Carrito";
 
@@ -42,57 +40,104 @@ export default function NavBar(props) {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px] ">
               <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
-              </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
-              </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
-              </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs  '>Cdfgdfg</a>
-              </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs ' >Cdfgdfg</a>
-              </li>
-              <li>
-                <a href='#' className='py-8 px-6 text-white font-bold uppercase text-xs '>
-                  Cart {' '}
-                  {cartItems.length ? (
-                    <button className="bg-red-500 rounded py-1 px-2"> {cartItems.length} </button>
-                  ) : ('')
-                  }
+                <a
+                  href="#"
+                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                >
+                  Cdfgdfg
                 </a>
               </li>
-
+              <li className="border-gray-400 my-8 uppercase">
+                <a
+                  href="#"
+                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                >
+                  Cdfgdfg
+                </a>
+              </li>
+              <li className="border-gray-400 my-8 uppercase">
+                <a
+                  href="#"
+                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                >
+                  Cdfgdfg
+                </a>
+              </li>
+              <li className="border-gray-400 my-8 uppercase">
+                <a
+                  href="#"
+                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                >
+                  Cdfgdfg
+                </a>
+              </li>
+              <li className="border-gray-400 my-8 uppercase">
+                <a
+                  href="#"
+                  className="py-8 px-6 text-white font-bold uppercase text-xs "
+                >
+                  Cdfgdfg
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="py-8 px-6 text-white font-bold  text-xs "
+                >
+                  Carrito {""}
+                  {cartItems.length ? (
+                    <Carrito
+                      onAdd={onAdd}
+                      onRemove={onRemove}
+                      cartItems={cartItems}
+                    />
+                  ) : (
+                    ""
+                  )}
+                </a>
+              </li>
             </ul>
           </div>
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold  text-xs'  >Cdfgdfg</a>
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs">
+              Cdfgdfg
+            </a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold  text-xs  '>Cdfgdfg</a>
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs  ">
+              Cdfgdfg
+            </a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold  text-xs  '>Cdfgdfg</a>
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs  ">
+              Cdfgdfg
+            </a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold  text-xs  '>Cdfgdfg</a>
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs  ">
+              Cdfgdfg
+            </a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold  text-xs '>Cdfgdfg</a>
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs ">
+              Cdfgdfg
+            </a>
           </li>
           <li>
-            <a href='#' className='py-8 px-6 text-white font-bold  text-xs '>
-              Carrito {''}
-              {cartItems.length ? (               
-                <Carrito onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/> 
-              ) : ('')
-              }
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs ">
+              Carrito {""}
+              {cartItems.length ? (
+                <Carrito
+                  onAdd={onAdd}
+                  onRemove={onRemove}
+                  cartItems={cartItems}
+                />
+              ) : (
+                ""
+              )}
             </a>
           </li>
         </ul>
