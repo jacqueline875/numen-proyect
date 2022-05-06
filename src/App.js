@@ -36,7 +36,7 @@ const App = () => {
       <BannerPrincipal/> 
       <p className="text-center mt-10 text-3xl font-bold text-silver">Productos </p>      
       <Cards onAdd={onAdd} products={products}/> 
-      <Carrito onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/> 
+      {/* <Carrito onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>  */}
       <p className="text-center mt-10 text-3xl font-bold text-silver">Ultimas Ofertas </p>  
       <Banner/>      
       <Carousel/> 
