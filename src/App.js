@@ -35,10 +35,9 @@ const App = () => {
       <NavBar  onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>        
       <BannerPrincipal/> 
       <p className="text-center mt-10 text-3xl font-bold text-silver">Productos </p>      
-      <Cards onAdd={onAdd} products={products}/> 
-      {/* <Carrito onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>  */}
+      <Cards onAdd={onAdd} products={products}/>     
       <p className="text-center mt-10 text-3xl font-bold text-silver">Ultimas Ofertas </p>  
-      <Banner/>      
+      <Banner products={products}/>      
       <Carousel/> 
       <p className="text-center mt-10 text-3xl font-bold text-silver">Seguinos en </p> 
       <Redes/>        

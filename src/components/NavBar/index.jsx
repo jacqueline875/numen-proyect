@@ -44,7 +44,7 @@ export default function NavBar(props) {
                   href="#"
                   className="py-8 px-6 text-white font-bold uppercase text-xs  "
                 >
-                  Cdfgdfg
+                  Productos
                 </a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
@@ -52,7 +52,7 @@ export default function NavBar(props) {
                   href="#"
                   className="py-8 px-6 text-white font-bold uppercase text-xs  "
                 >
-                  Cdfgdfg
+                  Ofertas
                 </a>
               </li>
               <li className="border-gray-400 my-8 uppercase">
@@ -60,25 +60,9 @@ export default function NavBar(props) {
                   href="#"
                   className="py-8 px-6 text-white font-bold uppercase text-xs  "
                 >
-                  Cdfgdfg
+                  Contacto
                 </a>
-              </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a
-                  href="#"
-                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
-                >
-                  Cdfgdfg
-                </a>
-              </li>
-              <li className="border-gray-400 my-8 uppercase">
-                <a
-                  href="#"
-                  className="py-8 px-6 text-white font-bold uppercase text-xs "
-                >
-                  Cdfgdfg
-                </a>
-              </li>
+              </li>             
               <li>
                 <a
                   href="#"
@@ -102,32 +86,22 @@ export default function NavBar(props) {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs">
-              Cdfgdfg
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase">
+            Productos
             </a>
           </li>
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs  ">
-              Cdfgdfg
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase ">
+              Ofertas
             </a>
           </li>
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs  ">
-              Cdfgdfg
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase ">
+              Contacto
             </a>
-          </li>
+          </li>          
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs  ">
-              Cdfgdfg
-            </a>
-          </li>
-          <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs ">
-              Cdfgdfg
-            </a>
-          </li>
-          <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs ">
+            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase">
               Carrito {""}
               {cartItems.length ? (
                 <Carrito
