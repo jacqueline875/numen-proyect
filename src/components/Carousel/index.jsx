@@ -38,8 +38,8 @@ const Carousel = () => {
     ]
   };
   return (
-    <div style={{width : "80vw", margin : "auto"}}>
-        <h2> Multiple items </h2>
+    <div className='bg-gradient-to-b from-purple to-gray-900 rounded-lg' style={{width : "80vw", margin : "auto"}}>
+        <h2>  </h2>
         <Slider {...settings}>
           <div>
             <img src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Shake-1_854001c4-61f8-4ebb-a318-2e6af38b721f_400x.png?v=1645549218" alt="" />
