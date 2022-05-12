@@ -1,14 +1,30 @@
 import React from "react";
+import Swal from "sweetalert2";
 
-//TODO Agregar esto en un modal. Al hacer clic en la cantidad de items que se ve en el menu (Navbar) deberia aparecer esta informarción en un modal.
 const Carrito = (props) => {
   const [showModal, setShowModal] = React.useState(false);
   const { cartItems, onAdd, onRemove } = props;
   const itemPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
+  const handleModal = () => {
+    Swal.fire({
+      title: "Vamos a iniciar la compra, ¿estás seguro?",
+      text: "De todas maneras puedes cancelar en cualquier momento",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("¡Recuerda que todas las transacciones son seguras!", "Vamos!");
+      }
+    });
+  };
+
   return (
     <>
       <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-2 py-1 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -16,8 +32,8 @@ const Carrito = (props) => {
       </button>
       {showModal ? (
         <>
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+          <div className="flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="relative h-0 w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
@@ -81,7 +97,7 @@ const Carrito = (props) => {
                         </div>
                         <div className="text-center">
                           <button
-                            onClick={() => alert("vas a comprar!")}
+                            onClick={() => handleModal()}
                             className="bg-purple py-2 px-3 text-white font-bold uppercase text-lg rounded hover:bg-gray-200 hover:text-gray-800"
                           >
                             Comprar
