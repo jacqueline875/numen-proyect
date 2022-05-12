@@ -6,14 +6,14 @@ export default function NavBar(props) {
   const { cartItems, onAdd, onRemove } = props;
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex bg-gradient-to-l from-purple to-gray-900 text-white px-10 items-center justify-between border-b border-gray-400 py-8 overflow-hidden">
+    <div className="flex items-center justify-between px-10 py-8 overflow-hidden text-white border-b border-gray-400 bg-gradient-to-l from-purple to-gray-900">
       <a href="/">
-        <img src="https://edit.org/images/cat/logos-big-2019090615.jpg" alt="logo" className='h-10 w-20 '  />
+        <img src="https://edit.org/editor/json_user/2022/05/12/3/8/3824ff149c5c8f0fe8db321b64d66045.jpg" alt="logo" className='h-20 w-50 '  />
       </a>
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="flex MOBILE-MENU lg:hidden">
           <div
-            className=" HAMBURGER-ICON space-y-2"
+            className="space-y-2 HAMBURGER-ICON"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
@@ -27,7 +27,7 @@ export default function NavBar(props) {
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 text-gray-500"
+                className="w-8 h-8 text-gray-500"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -40,32 +40,32 @@ export default function NavBar(props) {
               </svg>
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px] ">
-              <li className="border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-gray-400">
                 <a
                   href="#"
-                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                  className="px-6 py-8 text-xs font-bold text-white uppercase "
                 >
                   Productos
                 </a>
               </li>
-              <li className="border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-gray-400">
                 <a
                   href="#"
-                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                  className="px-6 py-8 text-xs font-bold text-white uppercase "
                 >
                   Ofertas
                 </a>
               </li>
-              <li className="border-gray-400 my-8 uppercase">
+              <li className="my-8 uppercase border-gray-400">
                 <a
                   href="#"
-                  className="py-8 px-6 text-white font-bold uppercase text-xs  "
+                  className="px-6 py-8 text-xs font-bold text-white uppercase "
                 >
                   Contacto
                 </a>
               </li>
               <li>
-                <div className="flex text-white font-bold  uppercase">
+                <div className="flex font-bold text-white uppercase">
                   <FaShoppingCart className="px-2 text-4xl" />{" "}
                   {cartItems.length ? (
                     <Carrito
@@ -82,11 +82,11 @@ export default function NavBar(props) {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+        <ul className="hidden space-x-8 DESKTOP-MENU lg:flex">
           <li>
             <a
               href="#"
-              className="py-8 px-6 text-white font-bold  text-xs uppercase"
+              className="px-6 py-8 text-xs font-bold text-white uppercase"
             >
               Productos
             </a>
@@ -94,7 +94,7 @@ export default function NavBar(props) {
           <li>
             <a
               href="#"
-              className="py-8 px-6 text-white font-bold  text-xs uppercase "
+              className="px-6 py-8 text-xs font-bold text-white uppercase "
             >
               Ofertas
             </a>
@@ -102,13 +102,13 @@ export default function NavBar(props) {
           <li>
             <a
               href="#"
-              className="py-8 px-6 text-white font-bold  text-xs uppercase "
+              className="px-6 py-8 text-xs font-bold text-white uppercase "
             >
               Contacto
             </a>
           </li>
           <li>
-            <div className="flex text-white font-bold  uppercase">
+            <div className="flex font-bold text-white uppercase">
               <FaShoppingCart className="px-2 text-4xl" />{" "}
               {cartItems.length ? (
                 <Carrito
