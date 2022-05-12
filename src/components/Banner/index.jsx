@@ -4,7 +4,7 @@ const Banner = (props) => {
   const { products } = props;
   const [imageUrl, setImageUrl] = useState(products[0]);
   //const [bannerChico, setBannerChico] = useState(products[3]);
-  const [delay] = useState(5000);
+  const [delay] = useState(3000);
 
   function useInterval(callback, delay) {
     const savedCallback = useRef();
@@ -47,7 +47,7 @@ const Banner = (props) => {
           </div>
           <div className="flex justify-center mt-8 md:w-1/2 md:mt-0 md:justify-end">
             <img
-              className="w-60 h-68 object-contain"
+              className="w-60 h-64 object-contain"
               src={imageUrl.imageUrl}
               alt={imageUrl.imageUrl}
             />

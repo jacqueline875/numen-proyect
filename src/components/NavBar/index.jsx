@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Carrito from "../Carrito";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function NavBar(props) {
   const { cartItems, onAdd, onRemove } = props;
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex bg-gradient-to-l from-purple to-gray-900 text-white px-10 items-center justify-between border-b border-gray-400 py-8">
+    <div className="flex bg-gradient-to-l from-purple to-gray-900 text-white px-10 items-center justify-between border-b border-gray-400 py-8 overflow-hidden">
       <a href="/">
-        <img src="" alt="logo" />
+        <img src="https://edit.org/images/cat/logos-big-2019090615.jpg" alt="logo" className='h-10 w-20 '  />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -62,13 +63,10 @@ export default function NavBar(props) {
                 >
                   Contacto
                 </a>
-              </li>             
+              </li>
               <li>
-                <a
-                  href="#"
-                  className="py-8 px-6 text-white font-bold  text-xs "
-                >
-                  Carrito {""}
+                <div className="flex text-white font-bold  uppercase">
+                  <FaShoppingCart className="px-2 text-4xl" />{" "}
                   {cartItems.length ? (
                     <Carrito
                       onAdd={onAdd}
@@ -78,7 +76,7 @@ export default function NavBar(props) {
                   ) : (
                     ""
                   )}
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -86,23 +84,32 @@ export default function NavBar(props) {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase">
-            Productos
+            <a
+              href="#"
+              className="py-8 px-6 text-white font-bold  text-xs uppercase"
+            >
+              Productos
             </a>
           </li>
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase ">
+            <a
+              href="#"
+              className="py-8 px-6 text-white font-bold  text-xs uppercase "
+            >
               Ofertas
             </a>
           </li>
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase ">
+            <a
+              href="#"
+              className="py-8 px-6 text-white font-bold  text-xs uppercase "
+            >
               Contacto
             </a>
-          </li>          
+          </li>
           <li>
-            <a href="#" className="py-8 px-6 text-white font-bold  text-xs uppercase">
-              Carrito {""}
+            <div className="flex text-white font-bold  uppercase">
+              <FaShoppingCart className="px-2 text-4xl" />{" "}
               {cartItems.length ? (
                 <Carrito
                   onAdd={onAdd}
@@ -112,7 +119,7 @@ export default function NavBar(props) {
               ) : (
                 ""
               )}
-            </a>
+            </div>
           </li>
         </ul>
       </nav>
@@ -135,7 +142,7 @@ export default function NavBar(props) {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: center;      
       }
     `}</style>
     </div>
