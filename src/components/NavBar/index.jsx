@@ -8,7 +8,7 @@ export default function NavBar(props) {
   return (
     <div className="flex items-center justify-between px-10 py-8 overflow-hidden text-white border-b border-gray-400 bg-gradient-to-l from-purple to-gray-900">
       <a href="/">
-        <img src="https://edit.org/editor/json_user/2022/05/12/3/8/3824ff149c5c8f0fe8db321b64d66045.jpg" alt="logo" className='h-12 w-50 '  />
+        <img src="https://edit.org/editor/json_user/2022/05/12/3/8/3824ff149c5c8f0fe8db321b64d66045.jpg" alt="logo" className='h-20 w-50 '  />
       </a>
       <nav>
         <section className="flex MOBILE-MENU lg:hidden">
