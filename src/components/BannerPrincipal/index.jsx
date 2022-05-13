@@ -8,7 +8,7 @@ const BannerPrincipal = () => {
         <p className='font-bold text-sm uppercase'>Mira las mejores ofertas</p>
         <p className='text-3xl font-bold'>Todo el mes de mayo</p>
         <p className='text-2xl mb-10 leading-none'>Notebook HP</p>
-        <a href='#' className='bg-purple py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800'>Ver más</a>
+        <a href='#VerProducto' className='bg-purple py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800'>Ver más</a>
         </div>  
     </div>
   )

@@ -42,7 +42,7 @@ export default function NavBar(props) {
             <ul className="flex flex-col items-center justify-between min-h-[250px] ">
               <li className="my-8 uppercase border-gray-400">
                 <a
-                  href="#"
+                  href="#Productos"
                   className="px-6 py-8 text-xs font-bold text-white uppercase "
                 >
                   Productos
@@ -50,7 +50,7 @@ export default function NavBar(props) {
               </li>
               <li className="my-8 uppercase border-gray-400">
                 <a
-                  href="#"
+                  href="#Ofertas"
                   className="px-6 py-8 text-xs font-bold text-white uppercase "
                 >
                   Ofertas
@@ -58,7 +58,7 @@ export default function NavBar(props) {
               </li>
               <li className="my-8 uppercase border-gray-400">
                 <a
-                  href="#"
+                  href="#Contacto"
                   className="px-6 py-8 text-xs font-bold text-white uppercase "
                 >
                   Contacto
@@ -85,7 +85,7 @@ export default function NavBar(props) {
         <ul className="hidden space-x-8 DESKTOP-MENU lg:flex">
           <li>
             <a
-              href="#"
+              href="#Productos"
               className="px-6 py-8 text-xs font-bold text-white uppercase"
             >
               Productos
@@ -93,15 +93,15 @@ export default function NavBar(props) {
           </li>
           <li>
             <a
-              href="#"
+              href="#Ofertas"
               className="px-6 py-8 text-xs font-bold text-white uppercase "
             >
               Ofertas
             </a>
           </li>
           <li>
-            <a
-              href="#"
+          <a
+              href="#Contacto"
               className="px-6 py-8 text-xs font-bold text-white uppercase "
             >
               Contacto

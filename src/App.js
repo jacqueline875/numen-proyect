@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Redes from "./components/Redes";
 import Carousel from "./components/Carousel";
 import Banner from "./components/Banner";
+import Mapa from "./components/Mapa";
 import BannerPrincipal from "./components/BannerPrincipal";
 import { products } from "./data"; 
 
@@ -33,13 +34,11 @@ const App = () => {
     <div className="bg-gray-900">
       <NavBar  onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>        
       <BannerPrincipal/> 
-      <p className="text-center mt-10 text-3xl font-bold text-silver">Productos </p>      
-      <Cards onAdd={onAdd} products={products}/>     
-      <p className="text-center mt-10 text-3xl font-bold text-silver">Ultimas Ofertas </p>  
-      <Banner products={products}/>      
-      <Carousel/> 
-      <p className="text-center mt-10 text-3xl font-bold text-silver">Seguinos en </p> 
+      <Banner products={products}/>       
+      <Cards onAdd={onAdd} products={products}/>           
+      <Carousel/>    
       <Redes/>        
+      <Mapa/>
       <Footer/> 
     </div>
   );
