@@ -1,7 +1,7 @@
 export const PRODUCTOS = [
-    { name: "GDFGFDG", link: "#" },
-    { name: "DFGFDG", link: "#" },
-    { name: "DFGDFG", link: "#" },
+    { name: "Parlantes", link: "#" },
+    { name: "Teclados", link: "#" },
+    { name: "Auriculares", link: "#" },
 ];
 export const RECURSOS = [
     { name: "DFGFDG", link: "#" },
