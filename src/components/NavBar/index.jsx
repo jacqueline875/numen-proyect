@@ -65,18 +65,18 @@ export default function NavBar(props) {
                 </a>
               </li>
               <li>
-                <div className="flex font-bold text-white uppercase">
-                  <FaShoppingCart className="px-2 text-4xl" />{" "}
-                  {cartItems.length ? (
-                    <Carrito
-                      onAdd={onAdd}
-                      onRemove={onRemove}
-                      cartItems={cartItems}
-                    />
-                  ) : (
-                    ""
-                  )}
-                </div>
+              <div className="flex font-bold text-white uppercase">
+              <FaShoppingCart className="text-2xl" />
+              {cartItems.length ? (
+                <Carrito
+                  onAdd={onAdd}
+                  onRemove={onRemove}
+                  cartItems={cartItems}
+                />
+              ) : (
+                ""
+              )}
+            </div>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ export default function NavBar(props) {
           <li>
             <a
               href="#Productos"
-              className="px-6 py-8 text-xs font-bold text-white uppercase"
+              className="px-6 py-8 text-sm font-bold text-white uppercase"
             >
               Productos
             </a>
@@ -94,7 +94,7 @@ export default function NavBar(props) {
           <li>
             <a
               href="#Ofertas"
-              className="px-6 py-8 text-xs font-bold text-white uppercase "
+              className="px-6 py-8 text-sm font-bold text-white uppercase "
             >
               Ofertas
             </a>
@@ -102,14 +102,14 @@ export default function NavBar(props) {
           <li>
           <a
               href="#Contacto"
-              className="px-6 py-8 text-xs font-bold text-white uppercase "
+              className="px-6 py-8 text-sm font-bold text-white uppercase "
             >
               Contacto
             </a>
           </li>
           <li>
             <div className="flex font-bold text-white uppercase">
-              <FaShoppingCart className="px-2 text-4xl" />{" "}
+              <FaShoppingCart className="text-2xl" />
               {cartItems.length ? (
                 <Carrito
                   onAdd={onAdd}
