@@ -6,8 +6,8 @@ import Redes from "./components/Redes";
 import Carousel from "./components/Carousel";
 import Banner from "./components/Banner";
 import Mapa from "./components/Mapa";
-import BannerPrincipal from "./components/BannerPrincipal";
-import { products } from "./data"; 
+import CarouselChico from "./components/CarouselChico";
+import { products, posters } from "./data"; 
 
 
 const App = () => {
@@ -33,10 +33,10 @@ const App = () => {
   return (   
     <div className="bg-gray-900">     
       <NavBar  onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>      
-      <Carousel/>        
+      <Carousel posters={posters}/>        
       <Cards onAdd={onAdd} products={products}/> 
       <Banner products={products}/>              
-      {/* <BannerPrincipal/>    */}
+      <CarouselChico/> 
       <Mapa/>
       <Redes/>  
       <Footer/> 
