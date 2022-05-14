@@ -2,8 +2,8 @@ import React from "react";
 
 const Mapa = () => {
   return (
-    <div id="Contacto">
-      <p className="text-center  m-10   text-3xl font-bold text-silver">
+    <div id="Contacto" >
+      <p className="text-center  mb-10 text-3xl font-bold text-silver">
         Estamos aquí
       </p>
       <iframe

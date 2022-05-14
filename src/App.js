@@ -31,14 +31,14 @@ const App = () => {
     }
   }
   return (   
-    <div className="bg-gray-900">
-      <NavBar  onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>        
-      <BannerPrincipal/> 
-      <Banner products={products}/>       
-      <Cards onAdd={onAdd} products={products}/>           
-      <Carousel/>    
-      <Redes/>        
+    <div className="bg-gray-900">     
+      <NavBar  onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>      
+      <Carousel/>        
+      <Cards onAdd={onAdd} products={products}/> 
+      <Banner products={products}/>              
+      {/* <BannerPrincipal/>    */}
       <Mapa/>
+      <Redes/>  
       <Footer/> 
     </div>
   );

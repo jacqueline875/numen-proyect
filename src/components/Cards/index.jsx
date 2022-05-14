@@ -7,7 +7,7 @@ const Cards = (props) => {
 
   return (
     <div id="Productos">   
-      <p className="text-center mt-10 text-3xl font-bold text-silver">Destacados</p>  
+      <p className="text-center mt-5 text-3xl font-bold text-silver">Destacados</p>  
       <div className="flex flex-row flex-wrap items-center justify-center">
         {products.map((product) => (
           <Product key={product.id} product={product} onAdd={onAdd} />
