@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Carousel = () => {
+const Carousel = (props) => {
+  const { posters } = props;
+
   const settings = {
     dots: false,
     infinite: true,
@@ -47,24 +49,14 @@ const Carousel = () => {
       >
         <h2> </h2>
         <Slider {...settings}>
-          <div>
-            <img
-              src="https://gaming-city.com.ar/static/home-slider/coolermaster-desktop.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://gaming-city.com.ar/static/home-slider/poweredbyasus-desktop.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://gaming-city.com.ar/static/home-slider/asusvp249-desktop.jpg"
-              alt=""
-            />
-          </div>
+          {posters.map((poster) => (
+            <div>
+              <img
+                src={poster.imageUrl}
+                alt={poster.imageUrl}
+              />
+            </div>
+          ))}
         </Slider>
       </div>
     </div>

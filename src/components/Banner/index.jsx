@@ -33,7 +33,7 @@ const Banner = (props) => {
   }, delay);
 
   return (
-    <div id="ofertas" className="mt-5">
+    <div id="Ofertas" className="mt-5">
       <p className="text-center text-3xl font-bold text-silver">Nuestras ofertas</p>
       <div className="container px-4 mx-auto py-9 md:py-12 md:px-6">
         <div className="flex flex-col justify-center space-y-4 items-strech md:flex-row md:space-y-0 md:space-x-6 lg:space-x-8">

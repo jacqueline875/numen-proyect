@@ -43,3 +43,18 @@ export const products = [
     }
    
 ]
+
+export const posters = [
+    {
+        "id": "1",
+        "imageUrl": "https://gaming-city.com.ar/static/home-slider/coolermaster-desktop.jpg"      
+    },
+    {
+        "id": "2",
+        "imageUrl": "https://gaming-city.com.ar/static/home-slider/poweredbyasus-desktop.jpg"      
+    },
+    {
+        "id": "3",
+        "imageUrl": "https://gaming-city.com.ar/static/home-slider/asusvp249-desktop.jpg"      
+    }
+]
