@@ -6,7 +6,7 @@ export default function NavBar(props) {
   const { cartItems, onAdd, onRemove } = props;
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between px-10 py-8 overflow-hidden text-white border-b border-gray-400 bg-gradient-to-l from-purple to-gray-900">
+    <div className="flex items-center justify-between px-10 py-8 overflow-hidden text-white border-b border-gray-400 bg-gradient-to-l from-purple via-gray-900 to-gray-900">      
       <a href="/">
         <img src="https://edit.org/editor/json_user/2022/05/12/3/8/3824ff149c5c8f0fe8db321b64d66045.jpg" alt="logo" className='h-20 w-50 '  />
       </a>
@@ -64,6 +64,14 @@ export default function NavBar(props) {
                   Contacto
                 </a>
               </li>
+              <li className="my-8 uppercase border-gray-400">
+                <a
+                  href="#Soporte"
+                  className="px-6 py-8 text-xs font-bold text-white uppercase "
+                >
+                  Soporte
+                </a>
+              </li>
               <li>
               <div className="flex font-bold text-white uppercase">
               <FaShoppingCart className="text-2xl" />
@@ -105,6 +113,14 @@ export default function NavBar(props) {
               className="px-6 py-8 text-sm font-bold text-white uppercase "
             >
               Contacto
+            </a>
+          </li>
+          <li>
+          <a
+              href="#Soporte"
+              className="px-6 py-8 text-sm font-bold text-white uppercase "
+            >
+              Soporte
             </a>
           </li>
           <li>
