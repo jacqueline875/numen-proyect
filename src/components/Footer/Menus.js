@@ -13,6 +13,12 @@ export const RECURSOS = [
     { name: "WD_BLACK", link: "#" },
 ];
 export const NOSOTROS = [
+    { name: "Jacqueline Moriones", link: "#" },
+    { name: "Osvaldo Colmenares", link: "https://www.linkedin.com/in/osvaldo-colmenares-594736ab"},
+    { name: "Facundo Roman", link: "#" },  
+    { name: "Juan Cornelio", link: "#" }, 
+];
+export const INFORMACION = [
     { name: "Calle 13 123 Local 23 (LA PLATA)", link: "#" },
     { name: "Servicio al Cliente", link: "#" },
     { name: "Condiciones de uso", link: "#" },  
