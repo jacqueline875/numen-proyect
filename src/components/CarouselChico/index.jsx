@@ -43,23 +43,23 @@ const CarouselChico = () => {
             <div className='bg-gradient-to-b from-purple to-gray-900 rounded-lg' style={{ width: "80vw", margin: "auto" }}>
                 <h2>  </h2>
                 <Slider {...settings}>
-                    <div>
-                        <img src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Shake-1_854001c4-61f8-4ebb-a318-2e6af38b721f_400x.png?v=1645549218" alt="" />
+                    <div className='mt-4'>
+                        <img className='h-200 w-200 ml-auto mr-auto block' src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Shake-1_854001c4-61f8-4ebb-a318-2e6af38b721f_400x.png?v=1645549218" alt="" />
+                    </div>
+                    <div className='mt-4'>
+                        <img className='w-60 h-64 object-contain ml-auto mr-auto block' src="https://i.ibb.co/rGfP7mp/Rectangle-59-1.png" alt="" />
+                    </div>
+                    <div  className='mt-4' >
+                        <img className='h-200 w-200 ml-auto mr-auto block' src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Crux-1.png?v=1636045676" alt="" />
                     </div>
                     <div>
-                        <img src="https://i.ibb.co/rGfP7mp/Rectangle-59-1.png" alt="" />
+                        <img className='h-200 w-200 ml-auto mr-auto block' src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Alnilam4.png?v=1640225660" alt="" />
                     </div>
-                    <div>
-                        <img src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Crux-1.png?v=1636045676" alt="" />
+                    <div className='mt-12'>
+                        <img className='h-200 w-200 ml-auto mr-auto block' src="https://i.ibb.co/J2BtZdg/Rectangle-56-1.png" alt="" />
                     </div>
-                    <div>
-                        <img src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Alnilam4.png?v=1640225660" alt="" />
-                    </div>
-                    <div>
-                        <img src="https://i.ibb.co/J2BtZdg/Rectangle-56-1.png" alt="" />
-                    </div>
-                    <div>
-                        <img src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Crux-1.png?v=1636045676" alt="" />
+                    <div className='mt-4'>
+                        <img className='h-200 w-200 ml-auto mr-auto block' src="https://cdn.shopify.com/s/files/1/0490/7191/5158/products/Crux-1.png?v=1636045676" alt="" />
                     </div>
                 </Slider>
             </div>
